@@ -1,0 +1,63 @@
+
+
+#include "main.h"
+
+
+#include "nucleo_stm32f767xx_rcc.h"
+#include "nucleo_stm32f767xx_gpio.h"
+#include "nucleo_stm32f767xx_uart.h"
+#include "nucleo_stm32f767xx_timer.h"
+
+
+#include "utils.h"
+uint32_t PCLK1TIM(void) // F4 Example
+{
+  /* Get PCLK1 frequency */
+  uint32_t pclk1 = HAL_RCC_GetPCLK1Freq();
+
+  /* Get PCLK1 prescaler */
+  if((RCC->CFGR & RCC_CFGR_PPRE1) == 0)
+  {
+    /* PCLK1 prescaler equal to 1 => TIMCLK = PCLK1 */
+    return (pclk1);
+  }
+  else
+  {
+    /* PCLK1 prescaler different from 1 => TIMCLK = 2 * PCLK1 */
+    return(2 * pclk1);
+  }
+}
+
+uint32_t counter = 0;
+int main(void)
+{
+	HAL_Init(); // Initializing HAL.
+
+	rcc_clock_config_HSE();
+
+	gpio_LED_Blue_init();
+
+
+	uart_UART3_GPIO_config();
+	uart_UART3_config();
+
+	timer_Init();
+
+	uint32_t tim6 =HAL_RCC_GetPCLK1Freq();
+	printf("%d\r\n", PCLK1TIM());
+	printf("%d\r\n", HAL_RCC_GetHCLKFreq());
+
+	display_board_information();
+	timer_start();
+    while (1){
+
+    }
+}
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	counter++;
+}
+
+

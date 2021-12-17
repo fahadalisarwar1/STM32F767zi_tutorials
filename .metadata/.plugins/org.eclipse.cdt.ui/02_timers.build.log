@@ -1,0 +1,20 @@
+10:54:12 **** Incremental Build of configuration Debug for project 02_timers ****
+make -j12 all 
+arm-none-eabi-gcc "../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I"D:/STM32F767zi_tutorials/02_timers/App/Inc" -I"D:/STM32F767zi_tutorials/02_timers/CMSIS/Core" -I"D:/STM32F767zi_tutorials/02_timers/BSP/NUCLEO-F767ZI/Inc" -I"D:/STM32F767zi_tutorials/02_timers/CMSIS/Device" -I"D:/STM32F767zi_tutorials/02_timers/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/STM32F767zi_tutorials/02_timers/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.d" -MT"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.o"
+arm-none-eabi-gcc -o "02_timers.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\STM32F767zi_tutorials\02_timers\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_timers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 02_timers.elf
+ 
+arm-none-eabi-size   02_timers.elf 
+arm-none-eabi-objdump -h -S  02_timers.elf  > "02_timers.list"
+arm-none-eabi-objcopy  -O binary  02_timers.elf  "02_timers.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12328	    120	   1680	  14128	   3730	02_timers.elf
+Finished building: default.size.stdout
+ 
+Finished building: 02_timers.bin
+ 
+Finished building: 02_timers.list
+ 
+
+10:54:13 Build Finished. 0 errors, 0 warnings. (took 1s.323ms)
+

@@ -1,0 +1,27 @@
+/*
+ * nucleo_stm32f767xx_timer.c
+ *
+ *  Created on: Dec 17, 2021
+ *      Author: Fahad
+ */
+
+#include "nucleo_stm32f767xx_timer.h"
+
+
+void timer_Init()
+{
+	htimer6.Instance = TIM6;
+
+	htimer6.Init.Prescaler 			= 2;
+	htimer6.Init.Period 			= 53999;
+
+	HAL_TIM_Base_Init(&htimer6);
+
+}
+
+void timer_start(void)
+{
+	HAL_TIM_Base_Start_IT(&htimer6);
+
+
+}

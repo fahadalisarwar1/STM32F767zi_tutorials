@@ -1,0 +1,36 @@
+12:29:46 **** Incremental Build of configuration Debug for project 02_timer_basic ****
+make -j12 all 
+arm-none-eabi-gcc "../App/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I"D:/STM32F767zi_tutorials/02_timer_basic/App/Inc" -I"D:/STM32F767zi_tutorials/02_timer_basic/CMSIS/Core" -I"D:/STM32F767zi_tutorials/02_timer_basic/BSP/NUCLEO-F767ZI/Inc" -I"D:/STM32F767zi_tutorials/02_timer_basic/CMSIS/Device" -I"D:/STM32F767zi_tutorials/02_timer_basic/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/STM32F767zi_tutorials/02_timer_basic/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"App/Src/main.d" -MT"App/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "App/Src/main.o"
+../App/Src/main.c: In function 'main':
+../App/Src/main.c:47:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   47 |  printf("%d\r\n", PCLK1TIM());
+      |          ~^       ~~~~~~~~~~
+      |           |       |
+      |           int     uint32_t {aka long unsigned int}
+      |          %ld
+../App/Src/main.c:48:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   48 |  printf("%d\r\n", HAL_RCC_GetHCLKFreq());
+      |          ~^       ~~~~~~~~~~~~~~~~~~~~~
+      |           |       |
+      |           int     uint32_t {aka long unsigned int}
+      |          %ld
+../App/Src/main.c:46:11: warning: unused variable 'tim6' [-Wunused-variable]
+   46 |  uint32_t tim6 =HAL_RCC_GetPCLK1Freq();
+      |           ^~~~
+arm-none-eabi-gcc -o "02_timer_basic.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\STM32F767zi_tutorials\02_timer_basic\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_timer_basic.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 02_timer_basic.elf
+ 
+arm-none-eabi-size   02_timer_basic.elf 
+arm-none-eabi-objdump -h -S  02_timer_basic.elf  > "02_timer_basic.list"
+arm-none-eabi-objcopy  -O binary  02_timer_basic.elf  "02_timer_basic.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13756	    120	   1760	  15636	   3d14	02_timer_basic.elf
+Finished building: default.size.stdout
+ 
+Finished building: 02_timer_basic.bin
+ 
+Finished building: 02_timer_basic.list
+ 
+
+12:29:47 Build Finished. 0 errors, 3 warnings. (took 1s.368ms)
+

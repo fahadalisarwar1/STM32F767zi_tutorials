@@ -1,0 +1,5 @@
+This project sets up a advanced timer
+
+the timer gives an interrupt every 1000 ms. 
+the timer clock is 108 Mhz
+

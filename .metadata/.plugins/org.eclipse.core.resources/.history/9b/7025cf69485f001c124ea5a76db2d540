@@ -1,5 +1,5 @@
-This project sets up a general purpose timer in Output compare mode.
-###################################################################
+#This project sets up a general purpose timer in Output compare mode.
+
 
 
 the timer gives an interrupt every 1000 ms. 

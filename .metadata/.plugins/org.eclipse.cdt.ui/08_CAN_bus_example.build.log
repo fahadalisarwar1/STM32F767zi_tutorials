@@ -1,0 +1,20 @@
+16:43:50 **** Incremental Build of configuration Debug for project 08_CAN_bus_example ****
+make -j12 all 
+arm-none-eabi-gcc "../App/Src/stm32f7xx_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/App/Inc" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/CMSIS/Core" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/BSP/NUCLEO-F767ZI/Inc" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/CMSIS/Device" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"App/Src/stm32f7xx_msp.d" -MT"App/Src/stm32f7xx_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "App/Src/stm32f7xx_msp.o"
+arm-none-eabi-gcc -o "08_CAN_bus_example.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\STM32F767zi_tutorials\08_CAN_bus_example\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="08_CAN_bus_example.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 08_CAN_bus_example.elf
+ 
+arm-none-eabi-size   08_CAN_bus_example.elf 
+arm-none-eabi-objdump -h -S  08_CAN_bus_example.elf  > "08_CAN_bus_example.list"
+arm-none-eabi-objcopy  -O binary  08_CAN_bus_example.elf  "08_CAN_bus_example.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12088	    120	   1680	  13888	   3640	08_CAN_bus_example.elf
+Finished building: default.size.stdout
+ 
+Finished building: 08_CAN_bus_example.bin
+ 
+Finished building: 08_CAN_bus_example.list
+ 
+
+16:43:52 Build Finished. 0 errors, 0 warnings. (took 1s.439ms)
+

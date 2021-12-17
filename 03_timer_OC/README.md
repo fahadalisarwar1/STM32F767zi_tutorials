@@ -24,7 +24,9 @@ this pin will be toggled every 1 second.
 	
 	
 First we initialize timer OC mode. 
+
 set prescaler etc
+
 we set the OC mode to toggle 
 
 

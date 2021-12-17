@@ -13,3 +13,4 @@
 1639733857029	Delete resource '02_timers/BSP/NUCLEO-F767ZI/Inc/nucleo_stm32f767xx_info.h'
 1639735845427	Rename resource '02_timers'
 1639739298492	Delete resource 'test'
+1639753320903	Rename resource '04_CAN_bus_example'

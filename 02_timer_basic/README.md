@@ -2,6 +2,9 @@ This project sets up a basic timer 6
 
 the timer gives an interrupt every 1 ms. 
 the timer clock is 108 Mhz
+
+
+
 	// timer clock is 108 Mhz
 	// scale it by 2
 	// now clock is 54 Mhz

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;08_CAN_bus_example/BSP/NUCLEO-F767ZI/Inc/nuceloe_stm32f767xx_can.h&apos; to &apos;nucleo_stm32f767xx_can.h&apos;" description="Rename resource &apos;nuceloe_stm32f767xx_can.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="BSP/NUCLEO-F767ZI/Inc/nuceloe_stm32f767xx_can.h" name="nucleo_stm32f767xx_can.h" stamp="1639756128450" updateReferences="true"/>
+</session>

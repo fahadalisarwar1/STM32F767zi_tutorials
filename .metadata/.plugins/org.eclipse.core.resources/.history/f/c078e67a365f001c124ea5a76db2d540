@@ -1,0 +1,38 @@
+/*
+ * nucleo_stm32f767xx_timer.c
+ *
+ *  Created on: Dec 17, 2021
+ *      Author: Fahad
+ */
+
+#include "nucleo_stm32f767xx_timer.h"
+
+
+
+
+// TIMER 3 CHANNEL 4 is connected to PB1 which is green LED on the nucleo board so we will use this pin as OC channel.
+
+// TIM3 is connected to APB1
+void timer_Init()
+{
+	htimer3.Instance = TIM3;
+	// clock freq  =  108 Mhz
+	//
+
+
+
+
+	htimer3.Init.Prescaler 			= 2000 - 1;
+	htimer3.Init.Period 			= 54 - 1;
+
+	HAL_TIM_Base_Init(&htimer3);
+
+}
+
+void timer_start(void)
+{
+
+	HAL_TIM_OC_Start(&htimer3, TIM_CHANNEL_4);
+
+
+}

@@ -10,7 +10,7 @@
 
 #include "main.h"
 
-TIM_HandleTypeDef htimer3;
+TIM_HandleTypeDef htimer6;
 
 void timer_Init(void);
 void timer_start(void);

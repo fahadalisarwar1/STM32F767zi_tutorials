@@ -17,11 +17,7 @@ void timer_Init()
 {
 	htimer3.Instance = TIM3;
 	// clock freq  =  108 Mhz
-	// prescaler = 2000
-	// 108 Mhz / 2000 = 54000 Hz
-	// this means each cycle takees 18.5 us
-	// to get 1 second, we use 54000  cycles
-
+	//
 
 
 

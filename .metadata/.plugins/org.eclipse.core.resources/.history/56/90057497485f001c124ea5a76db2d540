@@ -1,9 +1,6 @@
-# Output Compare mode
-
 This project sets up a general purpose timer in Output compare mode.
+###################################################################
 
-
-## specifications
 
 the timer gives an interrupt every 1000 ms. 
 the timer clock is 108 Mhz

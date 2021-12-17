@@ -8,7 +8,7 @@ the timer clock is 108 Mhz
 	// timer clock is 108 Mhz
 	// scale it by 2
 	// now clock is 54 Mhz
-	// one clock cycle is .185 ns
+	// one clock cycle is 18.5 ns
 	// count up to 54000 to have 1 ms delay
 	// the interrupt will be triggered every 1 ms
 

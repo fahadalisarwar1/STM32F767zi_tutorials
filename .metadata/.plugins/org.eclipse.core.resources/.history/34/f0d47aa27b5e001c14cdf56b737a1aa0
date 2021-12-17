@@ -1,0 +1,41 @@
+
+
+#include "main.h"
+
+
+#include "nucleo_stm32f767xx_rcc.h"
+#include "nucleo_stm32f767xx_gpio.h"
+#include "nucleo_stm32f767xx_uart.h"
+
+
+
+int main(void)
+{
+	HAL_Init(); // Initializing hal.
+
+	rcc_clock_config();
+
+	gpio_LED_Blue_init();
+
+
+	uart_UART3_GPIO_config();
+	uart_UART3_config();
+	printf("program starting....\r\n");
+
+	adc_GPIO_init();
+	adc_single_conversion_init();
+
+	adc_interrupt_init();
+	HAL_ADC_Start_IT(&adc1_handler);
+
+
+    while(1)
+    {
+
+    	HAL_Delay(250);
+    }
+}
+
+
+
+

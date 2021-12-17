@@ -1,0 +1,204 @@
+15:22:17 **** Build of configuration Debug for project 01_blank_project ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f767xx.d" -MT"Startup/startup_stm32f767xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f767xx.o" "../Startup/startup_stm32f767xx.s"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_usart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_usart.d" -MT"HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_usart.o"
+arm-none-eabi-gcc "../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.d" -MT"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.o"
+arm-none-eabi-gcc "../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_exti.d" -MT"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_exti.o"
+arm-none-eabi-gcc "../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_gpio.d" -MT"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_gpio.o"
+arm-none-eabi-gcc "../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.d" -MT"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.o"
+arm-none-eabi-gcc "../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_uart.d" -MT"BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_uart.o"
+In file included from ../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:9:
+D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc/nucleo_stm32f767xx_adc.h:14:8: error: unknown type name 'ADC_HandleTypeDef'
+   14 | extern ADC_HandleTypeDef adc1_handler;
+      |        ^~~~~~~~~~~~~~~~~
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:12:1: error: unknown type name 'ADC_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   12 | ADC_HandleTypeDef adc1_handler;
+      | ^~~~~~~~~~~~~~~~~
+      | UART_HandleTypeDef
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c: In function 'adc_single_conversion_init':
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:32:14: error: request for member 'Instance' in something not a structure or union
+   32 |  adc1_handler.Instance = ADC1;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:33:14: error: request for member 'Init' in something not a structure or union
+   33 |  adc1_handler.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:33:32: error: 'ADC_DATAALIGN_RIGHT' undeclared (first use in this function)
+   33 |  adc1_handler.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+      |                                ^~~~~~~~~~~~~~~~~~~
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:33:32: note: each undeclared identifier is reported only once for each function it appears in
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:34:14: error: request for member 'Init' in something not a structure or union
+   34 |  adc1_handler.Init.ScanConvMode = ADC_SCAN_DISABLE;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:34:35: error: 'ADC_SCAN_DISABLE' undeclared (first use in this function); did you mean 'TIM_CCxN_DISABLE'?
+   34 |  adc1_handler.Init.ScanConvMode = ADC_SCAN_DISABLE;
+      |                                   ^~~~~~~~~~~~~~~~
+      |                                   TIM_CCxN_DISABLE
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:35:14: error: request for member 'Init' in something not a structure or union
+   35 |  adc1_handler.Init.ContinuousConvMode = DISABLE;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:36:14: error: request for member 'Init' in something not a structure or union
+   36 |  adc1_handler.Init.NbrOfConversion = 1;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:37:14: error: request for member 'Init' in something not a structure or union
+   37 |  adc1_handler.Init.DiscontinuousConvMode = DISABLE;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:38:14: error: request for member 'Init' in something not a structure or union
+   38 |  adc1_handler.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:38:39: error: 'ADC_SOFTWARE_START' undeclared (first use in this function)
+   38 |  adc1_handler.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+      |                                       ^~~~~~~~~~~~~~~~~~
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:41:6: warning: implicit declaration of function 'HAL_ADC_Init'; did you mean 'HAL_DeInit'? [-Wimplicit-function-declaration]
+   41 |  if (HAL_ADC_Init(&adc1_handler) != HAL_OK)
+      |      ^~~~~~~~~~~~
+      |      HAL_DeInit
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:49:2: error: unknown type name 'ADC_ChannelConfTypeDef'
+   49 |  ADC_ChannelConfTypeDef channel_config_t;
+      |  ^~~~~~~~~~~~~~~~~~~~~~
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:50:18: error: request for member 'Channel' in something not a structure or union
+   50 |  channel_config_t.Channel = ADC_CHANNEL_10;
+      |                  ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:50:29: error: 'ADC_CHANNEL_10' undeclared (first use in this function); did you mean 'DAC2_CHANNEL_1'?
+   50 |  channel_config_t.Channel = ADC_CHANNEL_10;
+      |                             ^~~~~~~~~~~~~~
+      |                             DAC2_CHANNEL_1
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:52:18: error: request for member 'Rank' in something not a structure or union
+   52 |  channel_config_t.Rank = 1;
+      |                  ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:54:18: error: request for member 'SamplingTime' in something not a structure or union
+   54 |  channel_config_t.SamplingTime = ADC_SAMPLETIME_28CYCLES;
+      |                  ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:54:34: error: 'ADC_SAMPLETIME_28CYCLES' undeclared (first use in this function); did you mean 'ADC_SAMPLETIME_2CYCLE_5'?
+   54 |  channel_config_t.SamplingTime = ADC_SAMPLETIME_28CYCLES;
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                  ADC_SAMPLETIME_2CYCLE_5
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:57:6: warning: implicit declaration of function 'HAL_ADC_ConfigChannel'; did you mean 'HAL_TIM_IC_ConfigChannel'? [-Wimplicit-function-declaration]
+   57 |  if (HAL_ADC_ConfigChannel(&adc1_handler, &channel_config_t) != HAL_OK)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+      |      HAL_TIM_IC_ConfigChannel
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c: In function 'adc_interrupt_init':
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:69:2: warning: implicit declaration of function '__HAL_ADC_ENABLE_IT' [-Wimplicit-function-declaration]
+   69 |  __HAL_ADC_ENABLE_IT(&adc1_handler, ADC_IT_EOC);
+      |  ^~~~~~~~~~~~~~~~~~~
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:69:37: error: 'ADC_IT_EOC' undeclared (first use in this function); did you mean 'ADC_SR_EOC'?
+   69 |  __HAL_ADC_ENABLE_IT(&adc1_handler, ADC_IT_EOC);
+      |                                     ^~~~~~~~~~
+      |                                     ADC_SR_EOC
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c: In function 'adc_multichannel_init':
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:85:14: error: request for member 'Instance' in something not a structure or union
+   85 |  adc1_handler.Instance = ADC1;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:86:14: error: request for member 'Init' in something not a structure or union
+   86 |  adc1_handler.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:86:32: error: 'ADC_DATAALIGN_RIGHT' undeclared (first use in this function)
+   86 |  adc1_handler.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+      |                                ^~~~~~~~~~~~~~~~~~~
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:88:14: error: request for member 'Init' in something not a structure or union
+   88 |  adc1_handler.Init.ScanConvMode = ADC_SCAN_ENABLE;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:88:35: error: 'ADC_SCAN_ENABLE' undeclared (first use in this function); did you mean 'TIM_CCxN_ENABLE'?
+   88 |  adc1_handler.Init.ScanConvMode = ADC_SCAN_ENABLE;
+      |                                   ^~~~~~~~~~~~~~~
+      |                                   TIM_CCxN_ENABLE
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:91:14: error: request for member 'Init' in something not a structure or union
+   91 |  adc1_handler.Init.ContinuousConvMode = DISABLE;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:92:14: error: request for member 'Init' in something not a structure or union
+   92 |  adc1_handler.Init.NbrOfConversion = 2;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:95:14: error: request for member 'Init' in something not a structure or union
+   95 |  adc1_handler.Init.DiscontinuousConvMode = DISABLE;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:96:14: error: request for member 'Init' in something not a structure or union
+   96 |  adc1_handler.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+      |              ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:96:39: error: 'ADC_SOFTWARE_START' undeclared (first use in this function)
+   96 |  adc1_handler.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+      |                                       ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../App/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"App/Src/main.d" -MT"App/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/Src/main.o"
+arm-none-eabi-gcc "../App/Src/printf_redirect.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"App/Src/printf_redirect.d" -MT"App/Src/printf_redirect.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/Src/printf_redirect.o"
+arm-none-eabi-gcc "../App/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"App/Src/stm32f7xx_it.d" -MT"App/Src/stm32f7xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../App/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32F767xx -DUSE_HAL_DRIVER -c -I"D:/hal-tutorials-stm32f767/App/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Core" -I"D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc" -I"D:/hal-tutorials-stm32f767/CMSIS/Device" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/hal-tutorials-stm32f767/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"App/Src/system_stm32f7xx.d" -MT"App/Src/system_stm32f7xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/Src/system_stm32f7xx.o"
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:106:2: error: unknown type name 'ADC_ChannelConfTypeDef'
+  106 |  ADC_ChannelConfTypeDef channel_config_t;
+      |  ^~~~~~~~~~~~~~~~~~~~~~
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:107:18: error: request for member 'Channel' in something not a structure or union
+  107 |  channel_config_t.Channel = ADC_CHANNEL_10; // connected to PC0
+      |                  ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:107:29: error: 'ADC_CHANNEL_10' undeclared (first use in this function); did you mean 'DAC2_CHANNEL_1'?
+  107 |  channel_config_t.Channel = ADC_CHANNEL_10; // connected to PC0
+      |                             ^~~~~~~~~~~~~~
+      |                             DAC2_CHANNEL_1
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:108:18: error: request for member 'Rank' in something not a structure or union
+  108 |  channel_config_t.Rank = 1;
+      |                  ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:109:18: error: request for member 'SamplingTime' in something not a structure or union
+  109 |  channel_config_t.SamplingTime = ADC_SAMPLETIME_28CYCLES;
+      |                  ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:109:34: error: 'ADC_SAMPLETIME_28CYCLES' undeclared (first use in this function); did you mean 'ADC_SAMPLETIME_2CYCLE_5'?
+  109 |  channel_config_t.SamplingTime = ADC_SAMPLETIME_28CYCLES;
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                  ADC_SAMPLETIME_2CYCLE_5
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:116:18: error: request for member 'Channel' in something not a structure or union
+  116 |  channel_config_t.Channel = ADC_CHANNEL_11; // PC1
+      |                  ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:116:29: error: 'ADC_CHANNEL_11' undeclared (first use in this function); did you mean 'DMA_CHANNEL_11'?
+  116 |  channel_config_t.Channel = ADC_CHANNEL_11; // PC1
+      |                             ^~~~~~~~~~~~~~
+      |                             DMA_CHANNEL_11
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:117:18: error: request for member 'Rank' in something not a structure or union
+  117 |  channel_config_t.Rank = 2;
+      |                  ^
+../BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.c:118:18: error: request for member 'SamplingTime' in something not a structure or union
+  118 |  channel_config_t.SamplingTime = ADC_SAMPLETIME_28CYCLES;
+      |                  ^
+make: *** [BSP/NUCLEO-F767ZI/Src/subdir.mk:31: BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_adc.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../App/Src/main.c:8:
+D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc/nucleo_stm32f767xx_adc.h:14:8: error: unknown type name 'ADC_HandleTypeDef'
+   14 | extern ADC_HandleTypeDef adc1_handler;
+      |        ^~~~~~~~~~~~~~~~~
+../App/Src/main.c: In function 'main':
+../App/Src/main.c:30:2: warning: implicit declaration of function 'HAL_ADC_Start_IT'; did you mean 'HAL_DMA_Start_IT'? [-Wimplicit-function-declaration]
+   30 |  HAL_ADC_Start_IT(&adc1_handler);
+      |  ^~~~~~~~~~~~~~~~
+      |  HAL_DMA_Start_IT
+In file included from ../App/Src/stm32f7xx_it.c:11:
+D:/hal-tutorials-stm32f767/BSP/NUCLEO-F767ZI/Inc/nucleo_stm32f767xx_adc.h:14:8: error: unknown type name 'ADC_HandleTypeDef'
+   14 | extern ADC_HandleTypeDef adc1_handler;
+      |        ^~~~~~~~~~~~~~~~~
+../App/Src/main.c: At top level:
+../App/Src/main.c:42:31: error: unknown type name 'ADC_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   42 | void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *adc1_handler)
+      |                               ^~~~~~~~~~~~~~~~~
+      |                               UART_HandleTypeDef
+../App/Src/stm32f7xx_it.c: In function 'ADC_IRQHandler':
+../App/Src/stm32f7xx_it.c:28:2: warning: implicit declaration of function 'HAL_ADC_IRQHandler'; did you mean 'HAL_UART_IRQHandler'? [-Wimplicit-function-declaration]
+   28 |  HAL_ADC_IRQHandler(&adc1_handler);
+      |  ^~~~~~~~~~~~~~~~~~
+      |  HAL_UART_IRQHandler
+make: *** [App/Src/subdir.mk:28: App/Src/main.o] Error 1
+make: *** [App/Src/subdir.mk:28: App/Src/stm32f7xx_it.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+15:22:21 Build Failed. 46 errors, 5 warnings. (took 3s.804ms)
+

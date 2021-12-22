@@ -443,7 +443,7 @@ void display_board_information()
  8000600:	08002e74 	.word	0x08002e74
 
 08000604 <main>:
-#include "nucleo_stm32f767xx_uart.h"
+
 #include "utils.h"
 
 

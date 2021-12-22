@@ -30,3 +30,10 @@ C_DEPS += \
 App/Src/%.o: ../App/Src/%.c App/Src/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/App/Inc" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/CMSIS/Core" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/BSP/NUCLEO-F767ZI/Inc" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/CMSIS/Device" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/STM32F767zi_tutorials/08_CAN_bus_example/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
 
+clean: clean-App-2f-Src
+
+clean-App-2f-Src:
+	-$(RM) ./App/Src/main.d ./App/Src/main.o ./App/Src/printf_redirect.d ./App/Src/printf_redirect.o ./App/Src/stm32f7xx_it.d ./App/Src/stm32f7xx_it.o ./App/Src/stm32f7xx_msp.d ./App/Src/stm32f7xx_msp.o ./App/Src/system_stm32f7xx.d ./App/Src/system_stm32f7xx.o
+
+.PHONY: clean-App-2f-Src
+

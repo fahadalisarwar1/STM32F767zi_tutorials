@@ -106,9 +106,9 @@ bool rcc_clock_config_HSE(void)
 	    oscInit_t.HSICalibrationValue 				= RCC_HSICALIBRATION_DEFAULT;
 
 	    oscInit_t.PLL.PLLState 						= RCC_PLL_ON;
-	    oscInit_t.PLL.PLLSource 					= RCC_PLLSOURCE_HSI;
+	    oscInit_t.PLL.PLLSource 					= RCC_PLLSOURCE_HSE;
 
-	    oscInit_t.PLL.PLLM 							= 8;
+	    oscInit_t.PLL.PLLM 							= 4;
 	    oscInit_t.PLL.PLLN 							= 216;
 	    oscInit_t.PLL.PLLP 							= RCC_PLLP_DIV2;
 	    oscInit_t.PLL.PLLQ 							= 2;

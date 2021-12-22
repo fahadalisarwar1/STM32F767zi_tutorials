@@ -1,0 +1,10 @@
+15:00:48 **** Incremental Build of configuration Debug for project STM32F723E_DISCOVERY ****
+make -j12 all 
+arm-none-eabi-size   STM32F723E_DISCOVERY.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6352	     52	   1684	   8088	   1f98	STM32F723E_DISCOVERY.elf
+Finished building: default.size.stdout
+ 
+
+15:00:49 Build Finished. 0 errors, 0 warnings. (took 306ms)
+

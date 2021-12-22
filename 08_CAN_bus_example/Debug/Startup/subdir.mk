@@ -18,3 +18,10 @@ S_DEPS += \
 Startup/%.o: ../Startup/%.s Startup/subdir.mk
 	arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@" "$<"
 
+clean: clean-Startup
+
+clean-Startup:
+	-$(RM) ./Startup/startup_stm32f767xx.d ./Startup/startup_stm32f767xx.o
+
+.PHONY: clean-Startup
+

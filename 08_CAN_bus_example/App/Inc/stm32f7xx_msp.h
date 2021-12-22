@@ -10,6 +10,6 @@
 
 #include "main.h"
 
-void HAL_CAN_MspInit(CAN_HandleTypeDef *hcan);
+void HAL_CAN_MspInit(CAN_HandleTypeDef* hcan);
 
 #endif /* INC_STM32F7XX_MSP_H_ */

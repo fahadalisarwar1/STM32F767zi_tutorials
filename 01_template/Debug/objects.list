@@ -1,6 +1,7 @@
 "./App/Src/main.o"
 "./App/Src/printf_redirect.o"
 "./App/Src/stm32f7xx_it.o"
+"./App/Src/stm32f7xx_msp.o"
 "./App/Src/system_stm32f7xx.o"
 "./BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_gpio.o"
 "./BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.o"

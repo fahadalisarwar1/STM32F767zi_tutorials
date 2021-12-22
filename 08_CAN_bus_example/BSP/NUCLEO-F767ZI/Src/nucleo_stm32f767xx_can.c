@@ -37,7 +37,7 @@ void CAN_Init_250kbps(void){
 
 	  }
 
-	  myCanFilter();
+	  myCanFilter();   // Note that it is necessary to setup a filter for reception, {I read this somewhere, not sure if true or not. either way i setup a filter just to be safe}
 
 	  HAL_CAN_Start(&hcan1);
 

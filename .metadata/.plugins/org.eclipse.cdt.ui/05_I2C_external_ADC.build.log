@@ -1,0 +1,36 @@
+14:26:19 **** Incremental Build of configuration Debug for project 05_I2C_external_ADC ****
+make -j12 all 
+arm-none-eabi-gcc "../App/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I"D:/STM32F767zi_tutorials/05_I2C_external_ADC/App/Inc" -I"D:/STM32F767zi_tutorials/05_I2C_external_ADC/CMSIS/Core" -I"D:/STM32F767zi_tutorials/05_I2C_external_ADC/BSP/NUCLEO-F767ZI/Inc" -I"D:/STM32F767zi_tutorials/05_I2C_external_ADC/CMSIS/Device" -I"D:/STM32F767zi_tutorials/05_I2C_external_ADC/HAL_DRIVERS/STM32F7xx_HAL_Driver/Inc" -I"D:/STM32F767zi_tutorials/05_I2C_external_ADC/HAL_DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"App/Src/main.d" -MT"App/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "App/Src/main.o"
+In file included from ../App/Src/main.c:10:
+D:/STM32F767zi_tutorials/05_I2C_external_ADC/App/Inc/utils.h: In function 'display_board_information':
+D:/STM32F767zi_tutorials/05_I2C_external_ADC/App/Inc/utils.h:13:26: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   13 |  printf("Board Id:\t\t\t%u\r\n", HAL_GetDEVID());
+      |                         ~^       ~~~~~~~~~~~~~~
+      |                          |       |
+      |                          |       uint32_t {aka long unsigned int}
+      |                          unsigned int
+      |                         %lu
+D:/STM32F767zi_tutorials/05_I2C_external_ADC/App/Inc/utils.h:14:28: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   14 |  printf("Board Freq:\t\t\t%u\r\n", HAL_RCC_GetHCLKFreq());
+      |                           ~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                            |       |
+      |                            |       uint32_t {aka long unsigned int}
+      |                            unsigned int
+      |                           %lu
+arm-none-eabi-gcc -o "05_I2C_external_ADC.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\STM32F767zi_tutorials\05_I2C_external_ADC\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_I2C_external_ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_I2C_external_ADC.elf
+ 
+arm-none-eabi-size   05_I2C_external_ADC.elf 
+arm-none-eabi-objdump -h -S  05_I2C_external_ADC.elf  > "05_I2C_external_ADC.list"
+arm-none-eabi-objcopy  -O binary  05_I2C_external_ADC.elf  "05_I2C_external_ADC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12104	    120	   1680	  13904	   3650	05_I2C_external_ADC.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_I2C_external_ADC.bin
+ 
+Finished building: 05_I2C_external_ADC.list
+ 
+
+14:26:20 Build Finished. 0 errors, 2 warnings. (took 1s.216ms)
+

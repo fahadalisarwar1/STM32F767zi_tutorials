@@ -1,0 +1,20 @@
+15:38:28 **** Incremental Build of configuration Debug for project 04_i2c_cubeide ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "04_i2c_cubeide.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\STM32F767zi_tutorials\04_i2c_cubeide\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_i2c_cubeide.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 04_i2c_cubeide.elf
+ 
+arm-none-eabi-size   04_i2c_cubeide.elf 
+arm-none-eabi-objdump -h -S  04_i2c_cubeide.elf  > "04_i2c_cubeide.list"
+arm-none-eabi-objcopy  -O binary  04_i2c_cubeide.elf  "04_i2c_cubeide.bin"
+   text	   data	    bss	    dec	    hex	filename
+  14804	     20	   1676	  16500	   4074	04_i2c_cubeide.elf
+Finished building: default.size.stdout
+ 
+Finished building: 04_i2c_cubeide.bin
+ 
+Finished building: 04_i2c_cubeide.list
+ 
+
+15:38:30 Build Finished. 0 errors, 0 warnings. (took 1s.265ms)
+

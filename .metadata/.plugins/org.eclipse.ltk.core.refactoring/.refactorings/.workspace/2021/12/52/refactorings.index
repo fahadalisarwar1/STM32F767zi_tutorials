@@ -3,3 +3,4 @@
 1640158567122	Delete resource 'TUT_CAN_LOOPBACK'
 1640259454353	Rename resource '04_i2c_cubeide'
 1640262706764	Rename resource 'canbus_cube'
+1640262871051	Rename resource '07_canbus_cube'

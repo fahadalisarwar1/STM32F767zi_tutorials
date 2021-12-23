@@ -1,10 +1,11 @@
-11:38:18 **** Incremental Build of configuration Debug for project 01_template ****
-make -j12 all 
-arm-none-eabi-size   01_template.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12088	    120	   1680	  13888	   3640	01_template.elf
-Finished building: default.size.stdout
+12:08:38 **** Clean-only build of configuration Debug for project 01_template ****
+make -j12 clean 
+rm -rf ./Startup/startup_stm32f767xx.d ./Startup/startup_stm32f767xx.o
+rm -rf ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_usart.d ./HAL_DRIVERS/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_usart.o
+rm -rf ./BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_gpio.d ./BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_gpio.o ./BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.d ./BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_rcc.o ./BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_uart.d ./BSP/NUCLEO-F767ZI/Src/nucleo_stm32f767xx_uart.o
+rm -rf ./App/Src/main.d ./App/Src/main.o ./App/Src/printf_redirect.d ./App/Src/printf_redirect.o ./App/Src/stm32f7xx_it.d ./App/Src/stm32f7xx_it.o ./App/Src/stm32f7xx_msp.d ./App/Src/stm32f7xx_msp.o ./App/Src/system_stm32f7xx.d ./App/Src/system_stm32f7xx.o
+rm -rf 01_template.bin 01_template.elf 01_template.list default.size.stdout
  
 
-11:38:18 Build Finished. 0 errors, 0 warnings. (took 303ms)
+12:08:38 Build Finished. 0 errors, 0 warnings. (took 689ms)
 

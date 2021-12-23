@@ -10,7 +10,6 @@
 
 void display_board_information()
 {
-	printf("Board Id:\t\t\t%u\r\n", HAL_GetDEVID());
-	printf("Board Freq:\t\t\t%u\r\n", HAL_RCC_GetHCLKFreq());
+
 }
 #endif /* INC_UTILS_H_ */

@@ -1,0 +1,10 @@
+13:29:26 **** Incremental Build of configuration Debug for project 04_i2c_ADS1115_cube ****
+make -j12 all 
+arm-none-eabi-size   04_i2c_ADS1115_cube.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14840	     20	   1676	  16536	   4098	04_i2c_ADS1115_cube.elf
+Finished building: default.size.stdout
+ 
+
+13:29:26 Build Finished. 0 errors, 0 warnings. (took 256ms)
+

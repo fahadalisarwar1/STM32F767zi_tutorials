@@ -1,3 +1,5 @@
 1640101054999	Delete resource 'TUT_CAN_F103'
 1640101063817	Delete resource 'STM32F723E_DISCOVERY'
 1640158567122	Delete resource 'TUT_CAN_LOOPBACK'
+1640259454353	Rename resource '04_i2c_cubeide'
+1640262706764	Rename resource 'canbus_cube'

@@ -27,10 +27,13 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 #define ADS1115_ADDRESS 0x48
-unsigned char ADSwrite[6];
-int16_t reading;
+
+uint8_t config[3];
+uint8_t conv_data[1];
+uint8_t read_data[2];
+uint16_t reading;
 float voltage[4];
-const float voltageConv =4.096 / 32768.0;
+const float voltageConv = 2.048 / 32768.0;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -101,32 +104,42 @@ int main(void)
   while (1)
   {
 	  for(int i=0; i< 4; i++){
-	  			ADSwrite[0] = 0x01;
+	  			config[0] = 0x01;  // this means we are writing to the config register.
 
 	  			switch(i){
 	  				case(0):
-	  					ADSwrite[1] = 0xC1; //11000001
+	  					config[1] = 0xC5; // [OS = 1] [MUX = 100] [PGA = 010] [MODE = 1]    channel 0 = 11000101 = 0xC5
 	  				break;
 	  				case(1):
-	  					ADSwrite[1] = 0xD1; //11010001
+	  					config[1] = 0xD5; // [OS = 1] [MUX = 101] [PGA = 010] [MODE = 1]    channel 1
 	  				break;
 	  				case(2):
-	  					ADSwrite[1] = 0xE1;
+	  					config[1] = 0xE5; // [OS = 1] [MUX = 110] [PGA = 010] [MODE = 1]    channel 2
 	  				break;
 	  				case(3):
-	  					ADSwrite[1] = 0xF1;
+	  					config[1] = 0xF5;  // [OS = 1] [MUX = 111] [PGA = 010] [MODE = 1]    channel 3
 	  				break;
 	  			}
 
-	  			ADSwrite[2] = 0x83; //10000011 LSB
+	  			config[2] = 0x83; // [DR = 100] [COMP_MODE = 0] [COMP_POLL = 0] [COMP_LAT = 0] [COMP_QUE = 11]
 
-	  			HAL_I2C_Master_Transmit(&hi2c1, ADS1115_ADDRESS << 1, ADSwrite, 3, 100);
-	  			ADSwrite[0] = 0x00;
-	  			HAL_I2C_Master_Transmit(&hi2c1, ADS1115_ADDRESS << 1 , ADSwrite, 1 ,100);
+	  			// comparator is used to set the ALERT ready pin which we dont really need.
+
+
+	  			HAL_I2C_Master_Transmit(&hi2c1, ADS1115_ADDRESS << 1, config, 3, 100); //
+	  			// the address shift is done because it is mentioned in the HAL_I2C specs, i dont know exactly why ?
+	  			// but the HAL_I2C_Master_Transmit specifications say that it should be left shifted by 1 bit.
+
+
+
+	  			conv_data[0] = 0x00; // steps for reading conversion register now.
+
+
+	  			HAL_I2C_Master_Transmit(&hi2c1, ADS1115_ADDRESS << 1 , conv_data, 1 ,100);
 	  			HAL_Delay(20);
 
-	  			HAL_I2C_Master_Receive(&hi2c1, ADS1115_ADDRESS <<1, ADSwrite, 2, 100);
-	  			reading = (ADSwrite[0] << 8 | ADSwrite[1] );
+	  			HAL_I2C_Master_Receive(&hi2c1, ADS1115_ADDRESS <<1, read_data, 2, 100);
+	  			reading = (read_data[0] << 8 | read_data[1] );
 	  			if(reading < 0) {
 	  				reading = 0;
 	  			}
@@ -210,7 +223,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.Timing = 0x20404768;
+  hi2c1.Init.Timing = 0x6000030D;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;

@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 04_i2c_cubeide
+BUILD_ARTIFACT_NAME := 04_i2c_ADS1115_cube
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-04_i2c_cubeide.elf \
+04_i2c_ADS1115_cube.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-04_i2c_cubeide.list \
+04_i2c_ADS1115_cube.list \
 
 OBJCOPY_BIN += \
-04_i2c_cubeide.bin \
+04_i2c_ADS1115_cube.bin \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 04_i2c_cubeide.elf secondary-outputs
+main-build: 04_i2c_ADS1115_cube.elf secondary-outputs
 
 # Tool invocations
-04_i2c_cubeide.elf: $(OBJS) $(USER_OBJS) D:\STM32F767zi_tutorials\04_i2c_cubeide\STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "04_i2c_cubeide.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\STM32F767zi_tutorials\04_i2c_cubeide\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_i2c_cubeide.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+04_i2c_ADS1115_cube.elf: $(OBJS) $(USER_OBJS) D:\STM32F767zi_tutorials\04_i2c_cubeide\STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "04_i2c_ADS1115_cube.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\STM32F767zi_tutorials\04_i2c_cubeide\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_i2c_ADS1115_cube.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,19 +70,19 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-04_i2c_cubeide.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "04_i2c_cubeide.list"
+04_i2c_ADS1115_cube.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "04_i2c_ADS1115_cube.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-04_i2c_cubeide.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "04_i2c_cubeide.bin"
+04_i2c_ADS1115_cube.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "04_i2c_ADS1115_cube.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) 04_i2c_cubeide.bin 04_i2c_cubeide.elf 04_i2c_cubeide.list default.size.stdout
+	-$(RM) 04_i2c_ADS1115_cube.bin 04_i2c_ADS1115_cube.elf 04_i2c_ADS1115_cube.list default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
